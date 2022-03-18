@@ -9,8 +9,8 @@ const {connectDB}       = require('./db')
 const app = express();
 connectDB()
 
-app.get('/', (req,res) => res.send("Server de prueba para sticky notes"))
-app.get('*', (req, res) => res.status(404).send('Not found'))
+//app.get('/', (req,res) => res.send("Server de prueba para sticky notes"))
+//app.get('*', (req, res) => res.status(404).send('Not found'))
 module.exports = app
 async function start() {
 
